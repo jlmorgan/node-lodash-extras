@@ -1,0 +1,23 @@
+{
+  "author": "Justin Morgan <justin.l.morgan@gmail.com>",
+  "description": "A collection of extras for lodash.",
+  "devDependencies": {
+  },
+  "keywords": [
+    "lodash",
+    "extras"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@jlmorgan/lodash-extras",
+  "peerDependencies": {
+    "lodash": ">= 3 < 5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlmorgan/node-lodash-extras.git"
+  },
+  "scripts": {
+  },
+  "version": "0.0.0"
+}
