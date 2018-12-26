@@ -2,6 +2,15 @@
   "author": "Justin Morgan <justin.l.morgan@gmail.com>",
   "description": "A collection of extras for lodash.",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.11.0",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "mocha": "^5.2.0",
+    "mocha-param": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
   },
   "keywords": [
     "lodash",
@@ -18,6 +27,11 @@
     "url": "https://github.com/jlmorgan/node-lodash-extras.git"
   },
   "scripts": {
+    "build": "npm run docs && npm run lint && npm run coverage",
+    "coverage": "istanbul cover --dir build/coverage mocha -- 'test/**/*Spec.js' && istanbul report html --dir build/coverage",
+    "docs": "jsdoc ./src/*.js -t lib/jsdoc",
+    "lint": "eslint src test",
+    "test": "mocha 'test/**/*Spec.js'"
   },
   "version": "0.0.0"
 }
