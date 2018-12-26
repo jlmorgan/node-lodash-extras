@@ -1,0 +1,80 @@
+[
+  {
+    "alternative": null,
+    "expected": null,
+    "initial": null,
+    "message": "null coalesced with null returns null"
+  },
+  {
+    "alternative": false,
+    "expected": false,
+    "initial": null,
+    "message": "null coalesced with false returns false"
+  },
+  {
+    "alternative": 0,
+    "expected": 0,
+    "initial": null,
+    "message": "null coalesced with 0 returns 0"
+  },
+  {
+    "alternative": "",
+    "expected": "",
+    "initial": null,
+    "message": "null coalesced with '' returns ''"
+  },
+  {
+    "alternative": [
+    ],
+    "expected": [
+    ],
+    "initial": null,
+    "message": "null coalesced with [] returns []"
+  },
+  {
+    "alternative": {
+    },
+    "expected": {
+    },
+    "initial": null,
+    "message": "null coalesced with {} returns {}"
+  },
+  {
+    "alternative": true,
+    "expected": false,
+    "initial": false,
+    "message": "false coalesced with true returns false"
+  },
+  {
+    "alternative": 1,
+    "expected": 0,
+    "initial": 0,
+    "message": "0 coalesced with 1 returns 0"
+  },
+  {
+    "alternative": "a",
+    "expected": "",
+    "initial": "",
+    "message": "'' coalesced with populated string returns ''"
+  },
+  {
+    "alternative": [
+      0
+    ],
+    "expected": [
+    ],
+    "initial": [
+    ],
+    "message": "[] coalesced with populated array returns []"
+  },
+  {
+    "alternative": {
+      "a": true
+    },
+    "expected": {
+    },
+    "initial": {
+    },
+    "message": "{} coalesced with populated object returns {}"
+  }
+]
