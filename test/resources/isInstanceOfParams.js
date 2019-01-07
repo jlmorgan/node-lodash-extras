@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = [
-  // Array Tests
+  // Arrays
   {
     "constructor": Array,
     "expected": true,
@@ -15,7 +15,35 @@ module.exports = [
     "value": []
   },
 
-  // Date Tests
+  // Booleans
+  {
+    "constructor": Boolean,
+    "expected": false,
+    "message": "boolean literal is not instance of Boolean",
+    "value": true
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "boolean literal is not instance of Object",
+    "value": true
+  },
+  {
+    "constructor": Boolean,
+    "expected": true,
+    "message": "Boolean constructor is instance of Boolean",
+    /* eslint-disable no-magic-numbers, no-new-wrappers */
+    "value": new Boolean(1)
+  },
+  {
+    "constructor": Object,
+    "expected": true,
+    "message": "Boolean constructor is instance of Object",
+    /* eslint-disable no-magic-numbers, no-new-wrappers */
+    "value": new Boolean(1)
+  },
+
+  // Dates
   {
     "constructor": Date,
     "expected": true,
@@ -29,7 +57,7 @@ module.exports = [
     "value": new Date()
   },
 
-  // Function Tests
+  // Functions
   {
     "constructor": Function,
     "expected": true,
@@ -59,7 +87,57 @@ module.exports = [
     }
   },
 
-  // Object Tests
+  // Numbers
+  {
+    "constructor": Number,
+    "expected": false,
+    "message": "number literal is not instance of Number",
+    "value": 1
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "number literal is not instance of Object",
+    "value": 1
+  },
+  {
+    "constructor": Number,
+    "expected": false,
+    "message": "Infinity is not instance of Number",
+    "value": Infinity
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "Infinity is not instance of Object",
+    "value": Infinity
+  },
+  {
+    "constructor": Number,
+    "expected": false,
+    "message": "NaN is not instance of Number",
+    "value": NaN
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "NaN is not instance of Object",
+    "value": NaN
+  },
+  {
+    "constructor": Number,
+    "expected": true,
+    "message": "Number constructor is instance of Number",
+    "value": new Number("1")
+  },
+  {
+    "constructor": Object,
+    "expected": true,
+    "message": "Number constructor is instance of Object",
+    "value": new Number("1")
+  },
+
+  // Objects
   {
     "constructor": Object,
     "expected": true,
@@ -79,7 +157,7 @@ module.exports = [
     "value": Object.create(null)
   },
 
-  // String Tests
+  // Strings
   {
     "constructor": String,
     "expected": false,
@@ -95,15 +173,41 @@ module.exports = [
   {
     "constructor": String,
     "expected": true,
-    "message": "string constructed is instance of String",
+    "message": "String constructor is instance of String",
     /* eslint-disable no-new-wrappers */
     "value": new String()
   },
   {
     "constructor": Object,
     "expected": true,
-    "message": "string constructed is instance of Object",
+    "message": "String constructor is instance of Object",
     /* eslint-disable no-new-wrappers */
     "value": new String()
+  },
+
+  // Symbols
+  {
+    "constructor": Symbol,
+    "expected": false,
+    "message": "Symbol constructor is not instance of Symbol",
+    "value": Symbol("1")
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "Symbol constructor is not instance of Object",
+    "value": Symbol("1")
+  },
+  {
+    "constructor": Symbol,
+    "expected": false,
+    "message": "Symbol.iterator is not instance of Symbol",
+    "value": Symbol.iterator
+  },
+  {
+    "constructor": Object,
+    "expected": false,
+    "message": "Symbol.iterator is not instance of Object",
+    "value": Symbol.iterator
   }
 ];
