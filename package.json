@@ -31,7 +31,14 @@
     "coverage": "istanbul cover --dir build/coverage mocha -- 'test/**/*Spec.js' && istanbul report html --dir build/coverage",
     "docs": "jsdoc ./src/*.js -t lib/jsdoc",
     "lint": "eslint src test",
-    "test": "mocha 'test/**/*Spec.js'"
+    "next-version": "semver -i $(npm run --silent semver-level) $(npm run --silent package-version)",
+    "package-version": "node -pe \"require('./package.json').version\"",
+    "postversion": "git log -1 && git diff --cached HEAD^ && git push origin",
+    "preversion": "git checkout -b release/$(npm run --silent next-version) origin/dev",
+    "promote": "npm --no-git-tag-version version $(npm run --silent semver-level)",
+    "semver-level": "git log origin/dev ^master --format=%b | grep -i semver | cut -d ':' -f 2 | sort -u | head -1 | tr '[:upper:]' '[:lower:]'",
+    "test": "mocha 'test/**/*Spec.js'",
+    "version": "git add package.json && git commit -m \"Version bump to $(npm run --silent package-version)\""
   },
   "version": "0.1.0"
 }
