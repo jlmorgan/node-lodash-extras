@@ -4,7 +4,7 @@
 const { expect } = require("chai");
 
 // Project
-const append = require("../src/append");
+const { append } = require("..");
 
 describe("append", () => {
   it("'b' appended to 'a' returns 'ab'", () => {

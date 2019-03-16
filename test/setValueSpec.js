@@ -5,7 +5,7 @@ const { expect } = require("chai");
 const set = require("lodash/fp/set");
 
 // Project
-const setValue = require("../src/setValue");
+const { setValue } = require("..");
 
 describe("setValue", () => {
   it("should equal lodash.set", () => {

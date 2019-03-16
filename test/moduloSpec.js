@@ -4,11 +4,10 @@
 const { expect } = require("chai");
 
 // Project
-const modulo = require("../src/modulo");
+const { modulo } = require("..");
 
 describe("modulo", () => {
   it("should be equivalent to modulo operator", () => {
-    /* eslint-disable no-magic-numbers */
     const testDivisor = 2;
     const testDividend = 1;
     const expectedResult = testDividend % testDivisor;
