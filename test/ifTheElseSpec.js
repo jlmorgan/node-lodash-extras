@@ -4,10 +4,9 @@
 const { expect } = require("chai");
 
 // Project
-const ifThenElse = require("../src/ifThenElse");
+const { ifThenElse } = require("..");
 
 describe("ifThenElse", () => {
-  /* eslint-disable no-magic-numbers */
   const testPredicate = value => value === 0;
   const testIfTrue = value => value + 1;
   const testIfFalse = value => value - 1;

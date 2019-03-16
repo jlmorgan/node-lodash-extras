@@ -4,7 +4,7 @@
 const { expect } = require("chai");
 
 // Project
-const prepend = require("../src/prepend");
+const { prepend } = require("..");
 
 describe("prepend", () => {
   it("'b' prepended to 'a' returns 'ba'", () => {
