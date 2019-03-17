@@ -5,6 +5,7 @@ const F = require("lodash/fp");
 
 // Project
 const alt = require("./src/alt");
+const and = require("./src/and");
 const append = require("./src/append");
 const coalesce = require("./src/coalesce");
 const copy = require("./src/copy");
@@ -22,6 +23,7 @@ const setValue = require("./src/setValue");
 
 module.exports = F.runInContext().mixin({
   alt,
+  and,
   append,
   coalesce,
   copy,
