@@ -17,6 +17,12 @@ const isFunction = require("lodash/fp/isFunction");
  * @example <caption>Value and Value</caption>
  * _.and(true, false);
  * // => false
+ * @example <caption>Mixed</caption>
+ * _.and(() => true, false);
+ * // => false
+ *
+ * _.and(true, () => false);
+ * // => false
  * @example <caption>Evaluation chain</caption>
  * const predicates = [
  *   value => value % 2 === 0, // isEven
