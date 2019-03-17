@@ -24,10 +24,7 @@
     "array-callback-return": "error",
     "array-element-newline": [
       "error",
-      {
-        "minItems": 2,
-        "multiline": true
-      }
+      "consistent"
     ],
     "arrow-body-style": [
       "error",
@@ -246,7 +243,12 @@
       "error",
       "always-multiline"
     ],
-    "new-cap": "error",
+    "new-cap": [
+      "error",
+      {
+        "capIsNewExceptions": ["F"]
+      }
+    ],
     "new-parens": "error",
     "newline-after-var": "off",
     "newline-before-return": "error",
@@ -327,7 +329,8 @@
     "no-magic-numbers": [
       "error",
       {
-        "ignore": [0, 1]
+        "ignore": [-1, 0, 1],
+        "ignoreArrayIndexes": true
       }
     ],
     "no-misleading-character-class": "error",
@@ -417,8 +420,7 @@
     "object-curly-newline": [
       "error",
       {
-        "minProperties": 2,
-        "multiline": true
+        "consistent": true
       }
     ],
     "object-curly-spacing": [
@@ -428,7 +430,7 @@
     "object-property-newline": "error",
     "object-shorthand": [
       "error",
-      "always"
+      "methods"
     ],
     "one-var": [
       "error",

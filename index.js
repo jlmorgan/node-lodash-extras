@@ -7,6 +7,7 @@ const F = require("lodash/fp");
 const alt = require("./src/alt");
 const append = require("./src/append");
 const coalesce = require("./src/coalesce");
+const copy = require("./src/copy");
 const ifThenElse = require("./src/ifThenElse");
 const isBlank = require("./src/isBlank");
 const isJust = require("./src/isJust");
@@ -22,6 +23,7 @@ module.exports = F.runInContext().mixin({
   alt,
   append,
   coalesce,
+  copy,
   ifThenElse,
   isBlank,
   isInstanceOf,
