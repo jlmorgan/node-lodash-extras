@@ -9,6 +9,7 @@ const append = require("./src/append");
 const coalesce = require("./src/coalesce");
 const copy = require("./src/copy");
 const ifThenElse = require("./src/ifThenElse");
+const invokeWith = require("./src/invokeWith");
 const isBlank = require("./src/isBlank");
 const isJust = require("./src/isJust");
 const isInstanceOf = require("./src/isInstanceOf");
@@ -25,6 +26,7 @@ module.exports = F.runInContext().mixin({
   coalesce,
   copy,
   ifThenElse,
+  invokeWith,
   isBlank,
   isInstanceOf,
   isJust,
