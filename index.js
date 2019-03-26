@@ -17,6 +17,7 @@ const isInstanceOf = require("./src/isInstanceOf");
 const isNothing = require("./src/isNothing");
 const isTypeOf = require("./src/isTypeOf");
 const modulo = require("./src/modulo");
+const or = require("./src/or");
 const prepend = require("./src/prepend");
 const setProperty = require("./src/setProperty");
 const setValue = require("./src/setValue");
@@ -35,6 +36,7 @@ module.exports = F.runInContext().mixin({
   isNothing,
   isTypeOf,
   modulo,
+  or,
   prepend,
   setProperty,
   setValue

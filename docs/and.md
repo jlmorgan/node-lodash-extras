@@ -27,6 +27,16 @@ _.and(true, false);
 // => false
 ```
 
+### Mixed
+
+```javascript
+_.and(() => true, false);
+// => false
+
+_.and(true, () => false);
+// => false
+```
+
 ### Evaluation chain
 
 ```javascript
