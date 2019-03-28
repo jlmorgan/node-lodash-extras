@@ -11,10 +11,13 @@ const coalesce = require("./src/coalesce");
 const copy = require("./src/copy");
 const ifThenElse = require("./src/ifThenElse");
 const invokeWith = require("./src/invokeWith");
+const isAll = require("./src/isAll");
 const isBlank = require("./src/isBlank");
+const isFalse = require("./src/isFalse");
 const isJust = require("./src/isJust");
 const isInstanceOf = require("./src/isInstanceOf");
 const isNothing = require("./src/isNothing");
+const isTrue = require("./src/isTrue");
 const isTypeOf = require("./src/isTypeOf");
 const modulo = require("./src/modulo");
 const or = require("./src/or");
@@ -30,10 +33,13 @@ module.exports = F.runInContext().mixin({
   copy,
   ifThenElse,
   invokeWith,
+  isAll,
   isBlank,
+  isFalse,
   isInstanceOf,
   isJust,
   isNothing,
+  isTrue,
   isTypeOf,
   modulo,
   or,
