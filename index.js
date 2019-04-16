@@ -12,6 +12,7 @@ const copy = require("./src/copy");
 const ifThenElse = require("./src/ifThenElse");
 const invokeWith = require("./src/invokeWith");
 const isAll = require("./src/isAll");
+const isAny = require("./src/isAny");
 const isBlank = require("./src/isBlank");
 const isFalse = require("./src/isFalse");
 const isJust = require("./src/isJust");
@@ -34,6 +35,7 @@ module.exports = F.runInContext().mixin({
   ifThenElse,
   invokeWith,
   isAll,
+  isAny,
   isBlank,
   isFalse,
   isInstanceOf,
