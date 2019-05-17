@@ -8,18 +8,18 @@ const { isAll } = require("..");
 
 /* eslint-disable max-lines-per-function */
 describe("isAll", () => {
-  it("empty predicates returns true", () => {
+  it("empty predicates returns false", () => {
     const testPredicates = [];
     const testValue = 1;
 
-    expect(isAll(testPredicates)(testValue)).to.be.true; // eslint-disable-line no-unused-expressions
+    expect(isAll(testPredicates)(testValue)).to.be.false; // eslint-disable-line no-unused-expressions
   });
 
-  it("null predicates returns true", () => {
+  it("null predicates returns false", () => {
     const testPredicates = null;
     const testValue = 1;
 
-    expect(isAll(testPredicates)(testValue)).to.be.true; // eslint-disable-line no-unused-expressions
+    expect(isAll(testPredicates)(testValue)).to.be.false; // eslint-disable-line no-unused-expressions
   });
 
   it("passing all predicates returns true", () => {
