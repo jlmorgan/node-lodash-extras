@@ -1,4 +1,4 @@
-# _.isNothing(value)
+# _.isNone(value)
 
 Determines whether or not the value is `undefined` or `null`.
 
@@ -15,28 +15,28 @@ Determines whether or not the value is `undefined` or `null`.
 ### Value is `Nothing` (e.g., `undefined` or `null`)
 
 ```javascript
-_.isNothing()
+_.isNone()
 // => true
 
-_.isNothing(null)
+_.isNone(null)
 // => true
 ```
 
 ### Value is `Just`
 
 ```javascript
-_.isNothing(0)
+_.isNone(0)
 // => false
 
-_.isNothing(false)
+_.isNone(false)
 // => false
 
-_.isNothing("")
+_.isNone("")
 // => false
 
-_.isNothing([])
+_.isNone([])
 // => false
 
-_.isNothing({})
+_.isNone({})
 // => false
 ```
