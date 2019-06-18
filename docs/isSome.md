@@ -1,4 +1,4 @@
-# _.isJust(value)
+# _.isSome(value)
 
 Determines whether or not the `value` is just a value.
 
@@ -15,28 +15,28 @@ Determines whether or not the `value` is just a value.
 ### Value is `Nothing` (e.g., `undefined` or `null`)
 
 ```javascript
-_.isJust() // undefined
+_.isSome() // undefined
 // => false
 
-_.isJust(null)
+_.isSome(null)
 // => false
 ```
 
 ### Value is `Just`
 
 ```javascript
-_.isJust(0)
+_.isSome(0)
 // => true
 
-_.isJust(false)
+_.isSome(false)
 // => true
 
-_.isJust("")
+_.isSome("")
 // => true
 
-_.isJust([])
+_.isSome([])
 // => true
 
-_.isJust({})
+_.isSome({})
 // => true
 ```

@@ -15,9 +15,9 @@ const isAll = require("./src/isAll");
 const isAny = require("./src/isAny");
 const isBlank = require("./src/isBlank");
 const isFalse = require("./src/isFalse");
-const isJust = require("./src/isJust");
+const isSome = require("./src/isSome");
 const isInstanceOf = require("./src/isInstanceOf");
-const isNothing = require("./src/isNothing");
+const isNone = require("./src/isNone");
 const isTrue = require("./src/isTrue");
 const isTypeOf = require("./src/isTypeOf");
 const modulo = require("./src/modulo");
@@ -40,8 +40,8 @@ module.exports = F.runInContext().mixin({
   isBlank,
   isFalse,
   isInstanceOf,
-  isJust,
-  isNothing,
+  isSome,
+  isNone,
   isTrue,
   isTypeOf,
   modulo,

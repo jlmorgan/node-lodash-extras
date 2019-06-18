@@ -4,7 +4,7 @@
 const curry = require("lodash/fp/curry");
 
 // Project
-const isNothing = require("./isNothing");
+const isNone = require("./isNone");
 
 /**
  * Coalesces if the value is {@code Nothing} with an alternative value. The default of {@code value || alternative} is a
@@ -37,7 +37,7 @@ const isNothing = require("./isNothing");
  * // => 2
  */
 function coalesce(alternative, value) {
-  return isNothing(value) ? alternative : value;
+  return isNone(value) ? alternative : value;
 }
 
 module.exports = curry(coalesce);
