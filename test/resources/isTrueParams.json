@@ -1,0 +1,27 @@
+[
+  {
+    "expected": false,
+    "value": 1,
+    "message": "1 returns false"
+  },
+  {
+    "expected": false,
+    "value": "a",
+    "message": "non-empty string (\"a\") returns false"
+  },
+  {
+    "expected": false,
+    "value": [1],
+    "message": "non-empty array ([1]) returns false"
+  },
+  {
+    "expected": false,
+    "value": { "a": 1 },
+    "message": "empty object ({ \"a\": 1 }) returns false"
+  },
+  {
+    "expected": true,
+    "value": true,
+    "message": "true returns true"
+  }
+]

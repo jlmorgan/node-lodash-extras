@@ -10,30 +10,30 @@ const isUndefined = require("lodash/fp/isUndefined");
  * @param {*} value - Value to test.
  * @return {Boolean} True if the value is {@code null} or {@code undefined}; otherwise, false.
  * @example <caption>Value is {@code Nothing} (e.g., {@code undefined} or {@code null})</caption>
- * _.isNothing()
+ * _.isNone()
  * // => true
  *
- * _.isNothing(null)
+ * _.isNone(null)
  * // => true
  *
  * @example <caption>Value is {@code Just}</caption>
- * _.isNothing(0)
+ * _.isNone(0)
  * // => false
  *
- * _.isNothing(false)
+ * _.isNone(false)
  * // => false
  *
- * _.isNothing("")
+ * _.isNone("")
  * // => false
  *
- * _.isNothing([])
+ * _.isNone([])
  * // => false
  *
- * _.isNothing({})
+ * _.isNone({})
  * // => false
  */
-function isNothing(value) {
+function isNone(value) {
   return isUndefined(value) || isNull(value);
 }
 
-module.exports = isNothing;
+module.exports = isNone;

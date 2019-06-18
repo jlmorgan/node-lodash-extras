@@ -28,7 +28,7 @@
   },
   "scripts": {
     "build": "npm run docs && npm run lint && npm run coverage",
-    "coverage": "istanbul cover --dir build/coverage mocha -- 'test/**/*Spec.js' && istanbul report html --dir build/coverage",
+    "coverage": "istanbul cover _mocha ./test/**/*Spec.js --dir ./build/coverage && istanbul report html --dir ./build/coverage",
     "docs": "jsdoc ./src/*.js -t lib/jsdoc",
     "lint": "eslint src test",
     "next-version": "semver -i $(npm run --silent semver-level) $(npm run --silent package-version)",
@@ -40,5 +40,5 @@
     "test": "mocha 'test/**/*Spec.js'",
     "version": "git add package.json && git commit -m \"Version bump to $(npm run --silent package-version)\""
   },
-  "version": "0.2.1"
+  "version": "1.0.0"
 }

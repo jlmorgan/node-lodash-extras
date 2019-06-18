@@ -5,16 +5,16 @@ const { expect } = require("chai");
 const eachParam = require("mocha-param");
 
 // Project
-const { isJust } = require("..");
+const { and } = require("..");
 
 // Test
-const params = require("./resources/isJustParams");
+const params = require("./resources/andParams");
 
-describe("isJust", () => {
+describe("and", () => {
   eachParam(
     "${value.message}", // eslint-disable-line no-template-curly-in-string
     params,
-    testValues => expect(isJust(testValues.value))
+    testValues => expect(and(testValues.leftConjunct)(testValues.rightConjunct))
       .to.equal(testValues.expected)
   );
 });

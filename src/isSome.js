@@ -1,7 +1,7 @@
 "use strict";
 
 // Project
-const isNothing = require("./isNothing");
+const isNone = require("./isNone");
 
 /**
  * Determines whether or not the {@code value} is just a value.
@@ -9,30 +9,30 @@ const isNothing = require("./isNothing");
  * @param {*} [value] - Value to test.
  * @return {Boolean} True if the value is not {@code null} or {@code undefined}; otherwise, false.
  * @example <caption>Value is {@code Nothing} (e.g., {@code undefined} or {@code null})</caption>
- * _.isJust() // undefined
+ * _.isSome() // undefined
  * // => false
  *
- * _.isJust(null)
+ * _.isSome(null)
  * // => false
  *
  * @example <caption>Value is {@code Just}</caption>
- * _.isJust(0)
+ * _.isSome(0)
  * // => true
  *
- * _.isJust(false)
+ * _.isSome(false)
  * // => true
  *
- * _.isJust("")
+ * _.isSome("")
  * // => true
  *
- * _.isJust([])
+ * _.isSome([])
  * // => true
  *
- * _.isJust({})
+ * _.isSome({})
  * // => true
  */
-function isJust(value) {
-  return !isNothing(value);
+function isSome(value) {
+  return !isNone(value);
 }
 
-module.exports = isJust;
+module.exports = isSome;

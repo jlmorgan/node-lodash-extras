@@ -5,16 +5,16 @@ const { expect } = require("chai");
 const eachParam = require("mocha-param");
 
 // Project
-const { isNothing } = require("..");
+const { isNone } = require("..");
 
 // Test
-const params = require("./resources/isNothingParams");
+const params = require("./resources/isNoneParams");
 
-describe("isNothing", () => {
+describe("isNone", () => {
   eachParam(
     "${value.message}", // eslint-disable-line no-template-curly-in-string
     params,
-    testValues => expect(isNothing(testValues.value))
+    testValues => expect(isNone(testValues.value))
       .to.equal(testValues.expected)
   );
 });
