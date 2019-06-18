@@ -19,6 +19,7 @@ npm install --save @jlmorgan/lodash-extras
 * [`ifThenElse`](docs/ifThenElse.md)
 * [`invokeWith`](docs/invokeWith.md)
 * [`isAll`](docs/isAll.md)
+* [`isAny`](docs/isAny.md)
 * [`isBlank`](docs/isBlank.md)
 * [`isFalse`](docs/isFalse.md)
 * [`isInstanceOf`](docs/isInstanceOf.md)
@@ -31,6 +32,7 @@ npm install --save @jlmorgan/lodash-extras
 * [`prepend`](docs/prepend.md)
 * [`setProperty`](docs/setProperty.md)
 * [`setValue`](docs/setValue.md)
+* [`tryCatch`](docs/tryCatch.md)
 
 [lodash]: https://lodash.com/
 [Node.js]: https://nodejs.org/

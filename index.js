@@ -25,6 +25,7 @@ const or = require("./src/or");
 const prepend = require("./src/prepend");
 const setProperty = require("./src/setProperty");
 const setValue = require("./src/setValue");
+const tryCatch = require("./src/tryCatch");
 
 module.exports = F.runInContext().mixin({
   alt,
@@ -47,5 +48,6 @@ module.exports = F.runInContext().mixin({
   or,
   prepend,
   setProperty,
-  setValue
+  setValue,
+  tryCatch
 });
