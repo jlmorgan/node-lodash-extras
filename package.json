@@ -10,7 +10,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
-    "jsdoc": "^3.6.2",
+    "jsdoc": "^3.6.6",
     "mocha": "^6.1.4",
     "mocha-param": "^2.0.0",
     "nyc": "^14.1.1"
@@ -21,7 +21,7 @@
     "test": "test"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=10.0.0"
   },
   "files": [
     "docs",
@@ -37,7 +37,7 @@
   "main": "index.js",
   "name": "@jlmorgan/lodash-extras",
   "peerDependencies": {
-    "lodash": ">= 3 < 5"
+    "lodash": ">= 4.17.20 < 5"
   },
   "repository": {
     "type": "git",
@@ -61,6 +61,6 @@
   "test": "npm run test",
   "version": "1.1.0",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.20"
   }
 }

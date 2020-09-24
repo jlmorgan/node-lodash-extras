@@ -8,8 +8,8 @@ const { prepend } = require("..");
 
 describe("prepend", () => {
   it("'b' prepended to 'a' returns 'ba'", () => {
-    const testPrependix = "a";
-    const testString = "b";
+    const testString = "a";
+    const testPrependix = "b";
     const expectedResult = "ba";
 
     expect(prepend(testPrependix)(testString)).to.equal(expectedResult);
